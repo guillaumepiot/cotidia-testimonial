@@ -29,3 +29,9 @@ class Testimonial(models.Model):
                 # Use save=False to avoid recursion loop
                 original.photo.delete(save=False)
         super().save(*args, **kwargs)
+
+    def delete(self, *args, **kwargs):
+        """Remove image."""
+        if self.photo:
+            self.photo.delete(save=False)
+        super().delete(*args, **kwargs)
