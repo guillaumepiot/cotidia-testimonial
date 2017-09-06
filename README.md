@@ -34,3 +34,11 @@ It will return all the active testimonials in order of order id.
     {{testimonial}}
 {% endfor %}
 ```
+
+## Test
+
+Run the test from a virtual environment.
+
+```console
+$ python runtests.py
+```
