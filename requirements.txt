@@ -1,11 +1,10 @@
 Babel==2.5.0
 certifi==2017.7.27.1
 chardet==3.0.4
--e git+git@code.cotidia.com:cotidia/account.git@a6bb3537b3e39a1175f2ff52cc364fc7ab228ac3#egg=cotidia_account
--e git+git@code.cotidia.com:cotidia/admin.git@0d8d673fe791db855c9019397c95d299633f353c#egg=cotidia_admin
--e git+git@code.cotidia.com:cotidia/core.git@753d3a0b20079da1f9aee0100e927f425ab95485#egg=cotidia_core
--e git+git@code.cotidia.com:cotidia/mail.git@38d43fc8baf2ad7b926b5da71cbc546e344d1b2b#egg=cotidia_mail
-Django==1.11.5
+git+https://continuousintegration:cntintgre2017@code.cotidia.com/cotidia/account.git@a6bb3537b3e39a1175f2ff52cc364fc7ab228ac3
+git+https://continuousintegration:cntintgre2017@code.cotidia.com/cotidia/admin.git@0d8d673fe791db855c9019397c95d299633f353c
+git+https://continuousintegration:cntintgre2017@code.cotidia.com/cotidia/core.git@753d3a0b20079da1f9aee0100e927f425ab95485
+git+https://continuousintegration:cntintgre2017@code.cotidia.com/cotidia/mail.git@38d43fc8baf2ad7b926b5da71cbc546e344d1b2b
 django-appconf==1.0.2
 django-betterforms==1.1.4
 django-filter==1.0.4
