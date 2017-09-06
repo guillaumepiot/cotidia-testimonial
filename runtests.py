@@ -6,6 +6,11 @@ import django
 
 from django.conf import settings
 
+sys.path.append('../')
+
+for p in sys.path:
+    print(p)
+
 # PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 DEFAULT_SETTINGS = dict(
@@ -73,10 +78,10 @@ DEFAULT_SETTINGS = dict(
 
 def runtests(*test_args):
 
-    parent = os.path.dirname(os.path.abspath(__file__))
-    parent += "/cotidia"
-    print("path", parent)
-    sys.path.insert(0, parent)
+    # parent = os.path.dirname(os.path.abspath(__file__))
+    # parent += "/cotidia"
+    # print("path", parent)
+    # sys.path.insert(0, parent)
 
     if not settings.configured:
         settings.configure(**DEFAULT_SETTINGS)
