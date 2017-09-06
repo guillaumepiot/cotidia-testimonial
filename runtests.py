@@ -6,7 +6,7 @@ import django
 
 from django.conf import settings
 
-PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
+# PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 DEFAULT_SETTINGS = dict(
     INSTALLED_APPS=[
@@ -72,16 +72,16 @@ DEFAULT_SETTINGS = dict(
 
 
 def runtests(*test_args):
+
+    parent = os.path.dirname(os.path.abspath(__file__))
+    sys.path.insert(0, parent)
+
     if not settings.configured:
         settings.configure(**DEFAULT_SETTINGS)
 
     # Compatibility with Django 1.7's stricter initialization
     if hasattr(django, "setup"):
         django.setup()
-
-    parent = os.path.dirname(os.path.abspath(__file__))
-    print("path", parent)
-    sys.path.insert(0, parent)
 
     try:
         from django.test.runner import DiscoverRunner
