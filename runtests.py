@@ -74,6 +74,7 @@ DEFAULT_SETTINGS = dict(
 def runtests(*test_args):
 
     parent = os.path.dirname(os.path.abspath(__file__))
+    parent += "/cotidia"
     print("path", parent)
     sys.path.insert(0, parent)
 
