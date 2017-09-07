@@ -19,6 +19,19 @@ INSTALLED_APPS=[
 ]
 ```
 
+## URLs
+
+Add `testimonial-admin` to the URLs:
+
+```python
+urlpatterns = [
+    url(
+        r'^admin/testimonial/',
+        include('cotidia.testimonial.urls.admin', namespace="testimonial-admin")
+    ),
+]
+```
+
 ## Template tags
 
 In order to retrieve all the testimonials on a page, you can use the
