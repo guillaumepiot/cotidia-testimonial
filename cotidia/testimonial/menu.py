@@ -5,7 +5,7 @@ def admin_menu(context):
     return [
         {
             "text": "Testimonials",
-            "icon": "star",
+            "icon": "quote-left",
             "url": reverse("testimonial-admin:testimonial-list"),
             "permissions": [
                 "testimonial.add_testimonial",
