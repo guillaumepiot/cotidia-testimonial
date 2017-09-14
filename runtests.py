@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import os
 import sys
 
 import django
@@ -7,11 +6,6 @@ import django
 from django.conf import settings
 
 sys.path.append('../')
-
-for p in sys.path:
-    print(p)
-
-# PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 DEFAULT_SETTINGS = dict(
     INSTALLED_APPS=[
