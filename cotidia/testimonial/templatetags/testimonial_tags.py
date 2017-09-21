@@ -6,5 +6,5 @@ register = template.Library()
 
 
 @register.assignment_tag
-def get_testimonials():
-    return Testimonial.objects.filter(active=True).order_by('order_id')
+def get_testimonials(order_by='order_id'):
+    return Testimonial.objects.filter(active=True).order_by(order_by)
