@@ -48,6 +48,21 @@ It will return all the active testimonials in order of order id.
 {% endfor %}
 ```
 
+Options:
+
+- `order_by`: by default set to `order_id`.
+
+You can pass your own order key, for a random order for example use "?":
+
+```html
+{% load testimonial_tags %}
+{% get_testimonials "?" as testimonials %}
+
+{% for testimonial in testimonials %}
+    {{testimonial}}
+{% endfor %}
+```
+
 ## Test
 
 Run the test from a virtual environment.
