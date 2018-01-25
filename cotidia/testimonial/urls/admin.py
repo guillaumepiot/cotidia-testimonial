@@ -8,6 +8,8 @@ from cotidia.testimonial.views.admin.testimonial import (
     TestimonialDelete,
 )
 
+app_name = 'testimonial'
+
 urlpatterns = [
     url(
         r'^testimonials/$',
