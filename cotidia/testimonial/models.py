@@ -7,6 +7,7 @@ class Testimonial(models.Model):
     comment = models.TextField(max_length=500)
     photo = models.ImageField(blank=True)
     active = models.BooleanField(default=True)
+    featured = models.BooleanField(default=False)
 
     order_id = models.IntegerField(null=True, blank=True)
 
